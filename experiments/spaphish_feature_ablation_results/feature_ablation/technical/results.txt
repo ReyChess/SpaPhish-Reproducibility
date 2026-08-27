@@ -1,0 +1,31 @@
+1.dat
+Eficiencia obtenida = 83.6879
+
+2.dat
+Eficiencia obtenida = 80.7143
+
+3.dat
+Eficiencia obtenida = 77.1429
+
+4.dat
+Eficiencia obtenida = 85.0000
+
+5.dat
+Eficiencia obtenida = 88.4892
+
+6.dat
+Eficiencia obtenida = 79.8561
+
+7.dat
+Eficiencia obtenida = 83.4532
+
+8.dat
+Eficiencia obtenida = 76.2590
+
+9.dat
+Eficiencia obtenida = 79.1367
+
+10.dat
+Eficiencia obtenida = 78.4173
+
+Eficiencia promedio del proceso = 81.2157

@@ -1,0 +1,9 @@
+comparison,from_variant,to_variant,accuracy_from,accuracy_to,net_correct_gain,wrong_to_correct,correct_to_wrong,mcnemar_p
+add lexical to technical,technical,technical_lexical,0.8121863799283154,0.8508960573476703,54,105,51,1.8384904253007476e-05
+add persuasion to technical,technical,technical_persuasion,0.8121863799283154,0.821505376344086,13,108,95,0.39971407417807153
+add persuasion to lexical,lexical,lexical_persuasion,0.6430107526881721,0.7383512544802867,133,256,123,7.35601912092565e-12
+add technical to persuasion,persuasion,technical_persuasion,0.5290322580645161,0.821505376344086,408,559,151,6.81561987863935e-56
+add lexical to persuasion,persuasion,lexical_persuasion,0.5290322580645161,0.7383512544802867,292,469,177,2.112411571232927e-31
+add persuasion to technical+lexical,technical_lexical,full,0.8508960573476703,0.8824372759856631,44,114,70,0.0014563008113307359
+add lexical to technical+persuasion,technical_persuasion,full,0.821505376344086,0.8824372759856631,85,150,65,6.489334933350312e-09
+add technical to lexical+persuasion,lexical_persuasion,full,0.7383512544802867,0.8824372759856631,201,250,49,1.2640483782485399e-33

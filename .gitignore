@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# C/C++ build products
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+classifier
+miner
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# Repository-local builds
+build/
+bin/

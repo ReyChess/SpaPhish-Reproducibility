@@ -1,0 +1,15 @@
+Analysis of the 29 predictions modified by the tuned negative veto
+
+Total changes: 29
+Wrong-to-correct: 20
+Correct-to-wrong: 9
+Net gain: 11
+Corrective precision among changed decisions: 68.97%
+
+Direction:
+- 19 legitimate emails: phishing -> legitimate (corrected)
+- 1 phishing email: legitimate -> phishing (corrected)
+- 9 phishing emails: phishing -> legitimate (harmed)
+
+Interpretation:
+The tuned veto primarily reduces false phishing alarms. Its main risk is over-vetoing genuine phishing messages that share institutional, personalized, raw-URL, question, or click-action patterns with legitimate transactional email. Negative-strength magnitude and positive-score margin alone do not cleanly separate beneficial from harmful vetoes.

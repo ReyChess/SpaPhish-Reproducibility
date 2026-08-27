@@ -1,0 +1,204 @@
+{
+  "rules": {
+    "positive_rules": {
+      "mean": 505.5,
+      "median": 501.0,
+      "min": 477,
+      "max": 546
+    },
+    "negative_rules": {
+      "mean": 505.9,
+      "median": 502.0,
+      "min": 477,
+      "max": 546
+    },
+    "rule_entries": {
+      "mean": 1011.4,
+      "median": 1002.5,
+      "min": 954,
+      "max": 1092
+    },
+    "unique_antecedents": {
+      "mean": 505.9,
+      "median": 502.0,
+      "min": 477,
+      "max": 546
+    },
+    "mean_antecedent_length": {
+      "mean": 6.184855588530099,
+      "median": 6.168322243793941,
+      "min": 6.079611650485437,
+      "max": 6.290513833992095
+    },
+    "rule_file_bytes": {
+      "mean": 53321.4,
+      "median": 52866.0,
+      "min": 50274,
+      "max": 57450
+    }
+  },
+  "local": {
+    "covering_positive_rules": {
+      "mean": 28.486021505376343,
+      "median": 16,
+      "min": 0,
+      "max": 355
+    },
+    "retained_positive_rules": {
+      "mean": 12.037275985663083,
+      "median": 12,
+      "min": 0,
+      "max": 24
+    },
+    "classes_with_coverage": {
+      "mean": 1.5383512544802866,
+      "median": 2,
+      "min": 0,
+      "max": 2
+    }
+  },
+  "local_exact": {
+    "covering_positive_rules": {
+      "mean": 29.29140625,
+      "median": 17.0,
+      "min": 0,
+      "max": 355
+    },
+    "retained_positive_rules": {
+      "mean": 12.07578125,
+      "median": 12.0,
+      "min": 0,
+      "max": 24
+    }
+  },
+  "local_partial": {
+    "covering_positive_rules": {
+      "mean": 19.52173913043478,
+      "median": 12,
+      "min": 1,
+      "max": 228
+    },
+    "retained_positive_rules": {
+      "mean": 11.608695652173912,
+      "median": 12,
+      "min": 1,
+      "max": 24
+    }
+  },
+  "n_instances": 1395,
+  "n_partial": 115,
+  "classification": {
+    "wall_seconds": {
+      "mean": 0.093,
+      "median": 0.09,
+      "min": 0.09,
+      "max": 0.1
+    },
+    "user_seconds": {
+      "mean": 0.07300000000000001,
+      "median": 0.07,
+      "min": 0.06,
+      "max": 0.08
+    },
+    "sys_seconds": {
+      "mean": 0.022,
+      "median": 0.02,
+      "min": 0.01,
+      "max": 0.04
+    },
+    "max_rss_kb": {
+      "mean": 5114.8,
+      "median": 5052.0,
+      "min": 4608.0,
+      "max": 5692.0
+    }
+  },
+  "mining": {
+    "wall_seconds": {
+      "mean": 0.308,
+      "median": 0.31,
+      "min": 0.28,
+      "max": 0.36
+    },
+    "user_seconds": {
+      "mean": 0.15,
+      "median": 0.15,
+      "min": 0.1,
+      "max": 0.22
+    },
+    "sys_seconds": {
+      "mean": 0.15533333333333332,
+      "median": 0.15,
+      "min": 0.1,
+      "max": 0.22
+    },
+    "max_rss_kb": {
+      "mean": 133508.26666666666,
+      "median": 133546.0,
+      "min": 132300.0,
+      "max": 135024.0
+    },
+    "per_fold_wall": {
+      "1": {
+        "mean": 0.30666666666666664,
+        "median": 0.3,
+        "min": 0.29,
+        "max": 0.33
+      },
+      "2": {
+        "mean": 0.3,
+        "median": 0.3,
+        "min": 0.28,
+        "max": 0.32
+      },
+      "3": {
+        "mean": 0.31666666666666665,
+        "median": 0.32,
+        "min": 0.31,
+        "max": 0.32
+      },
+      "4": {
+        "mean": 0.31333333333333335,
+        "median": 0.31,
+        "min": 0.31,
+        "max": 0.32
+      },
+      "5": {
+        "mean": 0.3233333333333333,
+        "median": 0.31,
+        "min": 0.3,
+        "max": 0.36
+      },
+      "6": {
+        "mean": 0.32333333333333336,
+        "median": 0.33,
+        "min": 0.3,
+        "max": 0.34
+      },
+      "7": {
+        "mean": 0.3,
+        "median": 0.29,
+        "min": 0.29,
+        "max": 0.32
+      },
+      "8": {
+        "mean": 0.2966666666666667,
+        "median": 0.3,
+        "min": 0.28,
+        "max": 0.31
+      },
+      "9": {
+        "mean": 0.30333333333333334,
+        "median": 0.31,
+        "min": 0.28,
+        "max": 0.32
+      },
+      "10": {
+        "mean": 0.2966666666666667,
+        "median": 0.28,
+        "min": 0.28,
+        "max": 0.33
+      }
+    }
+  }
+}

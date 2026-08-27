@@ -1,0 +1,37 @@
+{
+  "source_zip": "Spaphish_AC_Discretized_sparse.zip",
+  "output_file": "spaphish_binary_folds.csv",
+  "rows": 1395,
+  "feature_columns": 45,
+  "class_counts": {
+    "77": 664,
+    "78": 731
+  },
+  "fold_sizes": {
+    "1": 141,
+    "2": 140,
+    "3": 140,
+    "4": 140,
+    "5": 139,
+    "6": 139,
+    "7": 139,
+    "8": 139,
+    "9": 139,
+    "10": 139
+  },
+  "fold_partition_validation": "PASS",
+  "all_rows_assigned_once": true,
+  "duplicate_transaction_signatures_in_test_folds": {
+    "1": 22,
+    "2": 29,
+    "3": 24,
+    "4": 28,
+    "5": 25,
+    "6": 26,
+    "7": 23,
+    "8": 22,
+    "9": 28,
+    "10": 24
+  },
+  "note": "For identical duplicate transactions, occurrence-to-instance_id assignment is deterministic by master-file order. This does not alter features, class labels, fold composition, or aggregate evaluation metrics."
+}

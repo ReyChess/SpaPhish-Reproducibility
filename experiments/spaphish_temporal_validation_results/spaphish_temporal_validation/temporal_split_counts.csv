@@ -1,0 +1,6 @@
+split,n,label0_legitimate,label1_phishing
+train_2014_2023,565,472,93
+validation_2024,295,104,191
+test_2025,511,88,423
+train_2014_2024,860,576,284
+undated,24,0,24

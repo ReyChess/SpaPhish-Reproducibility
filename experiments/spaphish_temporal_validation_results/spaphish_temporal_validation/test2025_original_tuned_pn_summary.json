@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.7710371819960861,
+  "macro_f1": 0.6974602387446425,
+  "phishing_precision": 0.95,
+  "phishing_recall": 0.7635933806146572,
+  "phishing_f1": 0.8466579292267365,
+  "balanced_accuracy": 0.7852057812164195,
+  "mcc": 0.45641754040853616,
+  "tn": 71,
+  "fp": 17,
+  "fn": 100,
+  "tp": 323,
+  "near_ties": 31,
+  "neg_covered": 25,
+  "changed": 1,
+  "wrong_to_correct": 1,
+  "correct_to_wrong": 0,
+  "net_gain": 1
+}

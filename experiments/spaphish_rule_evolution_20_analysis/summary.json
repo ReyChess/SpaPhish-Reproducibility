@@ -1,0 +1,170 @@
+{
+  "77": {
+    "baseline_positive_rules": 454,
+    "updated_positive_rules": 398,
+    "persistent": 229,
+    "added": 169,
+    "removed": 225,
+    "jaccard": 0.36757624398073835
+  },
+  "78": {
+    "baseline_positive_rules": 103,
+    "updated_positive_rules": 151,
+    "persistent": 31,
+    "added": 120,
+    "removed": 72,
+    "jaccard": 0.13901345291479822
+  },
+  "recovered_fn": {
+    "n": 42,
+    "with_at_least_one_new_exact_phishing_rule": 27,
+    "with_at_least_one_new_partial_phishing_rule": 42,
+    "mean_new_exact_rules": 4.0,
+    "median_new_exact_rules": 1.0,
+    "mean_persistent_exact_rules": 0.3333333333333333
+  },
+  "top_added_items_class78": [
+    {
+      "item_name": "LEX_URGENCY_PRESSURE",
+      "added_rate": 0.3333333333333333,
+      "removed_rate": 0.25,
+      "rate_diff": 0.08333333333333331,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LEX_PRIZE_REWARD_BENEFIT",
+      "added_rate": 0.06666666666666667,
+      "removed_rate": 0.0,
+      "rate_diff": 0.06666666666666667,
+      "q_value": 0.6120280938123763
+    },
+    {
+      "item_name": "LEX_DELIVERY_PACKAGE",
+      "added_rate": 0.25,
+      "removed_rate": 0.2222222222222222,
+      "rate_diff": 0.02777777777777779,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "URL_COUNT_2_5",
+      "added_rate": 0.35833333333333334,
+      "removed_rate": 0.3333333333333333,
+      "rate_diff": 0.025000000000000022,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "SUBJECT_LONG",
+      "added_rate": 0.025,
+      "removed_rate": 0.0,
+      "rate_diff": 0.025,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "URL_COUNT_6_10",
+      "added_rate": 0.03333333333333333,
+      "removed_rate": 0.013888888888888888,
+      "rate_diff": 0.019444444444444445,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LEX_PERSONAL_DATA_IDENTITY",
+      "added_rate": 0.058333333333333334,
+      "removed_rate": 0.041666666666666664,
+      "rate_diff": 0.01666666666666667,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "TEXT_HAS_EXCLAMATION",
+      "added_rate": 0.20833333333333334,
+      "removed_rate": 0.19444444444444445,
+      "rate_diff": 0.013888888888888895,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "HOPS_4_7",
+      "added_rate": 0.025,
+      "removed_rate": 0.013888888888888888,
+      "rate_diff": 0.011111111111111113,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LIKING_SIMILARITY_DECEPTION_YES",
+      "added_rate": 0.7166666666666667,
+      "removed_rate": 0.7083333333333334,
+      "rate_diff": 0.008333333333333304,
+      "q_value": 1.0
+    }
+  ],
+  "top_removed_items_class78": [
+    {
+      "item_name": "LEX_BRAND_INSTITUTION",
+      "added_rate": 0.26666666666666666,
+      "removed_rate": 0.4305555555555556,
+      "rate_diff": -0.16388888888888892,
+      "q_value": 0.6120280938123763
+    },
+    {
+      "item_name": "LEX_ACCOUNT_ACCESS_SECURITY",
+      "added_rate": 0.23333333333333334,
+      "removed_rate": 0.3055555555555556,
+      "rate_diff": -0.07222222222222224,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "AUTHORITY_STRONG_3_ANNOTATORS",
+      "added_rate": 0.3333333333333333,
+      "removed_rate": 0.4027777777777778,
+      "rate_diff": -0.06944444444444448,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LEX_THREAT_SUSPENSION_LOSS",
+      "added_rate": 0.058333333333333334,
+      "removed_rate": 0.1111111111111111,
+      "rate_diff": -0.05277777777777777,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "AUTHORITY_YES",
+      "added_rate": 0.825,
+      "removed_rate": 0.875,
+      "rate_diff": -0.050000000000000044,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LIKING_SIMILARITY_DECEPTION_STRONG_3_ANNOTATORS",
+      "added_rate": 0.2916666666666667,
+      "removed_rate": 0.3333333333333333,
+      "rate_diff": -0.04166666666666663,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LEX_PAYMENT_FINANCE",
+      "added_rate": 0.14166666666666666,
+      "removed_rate": 0.1527777777777778,
+      "rate_diff": -0.011111111111111127,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "COMMITMENT_INTEGRITY_RECIPROCATION_STRONG_3_ANNOTATORS",
+      "added_rate": 0.11666666666666667,
+      "removed_rate": 0.125,
+      "rate_diff": -0.008333333333333331,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "DISTRACTION_STRONG_3_ANNOTATORS",
+      "added_rate": 0.8,
+      "removed_rate": 0.8055555555555556,
+      "rate_diff": -0.005555555555555536,
+      "q_value": 1.0
+    },
+    {
+      "item_name": "LEX_CLICK_ACTION_REQUEST",
+      "added_rate": 0.21666666666666667,
+      "removed_rate": 0.2222222222222222,
+      "rate_diff": -0.005555555555555536,
+      "q_value": 1.0
+    }
+  ]
+}

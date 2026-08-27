@@ -1,0 +1,4 @@
+1.dat
+Eficiencia obtenida = 77.1037
+
+Eficiencia promedio del proceso = 77.1037

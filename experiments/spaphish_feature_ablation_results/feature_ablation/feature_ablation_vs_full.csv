@@ -1,0 +1,7 @@
+variant,full_wrong_variant_right,full_right_variant_wrong,discordant,net_full_advantage,mcnemar_exact_p,predictions_different
+technical,61,159,220,98,2.9055277229501566e-11,220
+lexical,62,396,458,334,1.2568323647010687e-60,458
+persuasion,82,575,657,493,4.5925815408594377e-92,657
+technical_lexical,70,114,184,44,0.0014563008113307359,184
+technical_persuasion,65,150,215,85,6.489334933350312e-09,215
+lexical_persuasion,49,250,299,201,1.2640483782485399e-33,299

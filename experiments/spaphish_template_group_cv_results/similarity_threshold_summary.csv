@@ -1,0 +1,6 @@
+threshold,pair_edges,multi_message_groups,messages_in_multi_groups,largest_group,mixed_label_groups
+1.0,83,27,73,6,0
+0.99,137,47,123,8,0
+0.95,719,73,271,44,0
+0.9,1884,111,404,45,0
+0.85,2626,124,488,48,1

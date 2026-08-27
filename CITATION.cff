@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use these artifacts, please cite the SpaPhish study and dataset."
+title: "SpaPhish Reproducibility Package"
+type: software
+license: MIT
+authors:
+  - family-names: "Cruz de la Osa"
+    given-names: "Reyder"
+    orcid: "https://orcid.org/0009-0008-8164-5404"
+  - family-names: "Hernández-León"
+    given-names: "Raudel"
+    orcid: "https://orcid.org/0000-0001-9107-7887"
+  - family-names: "Bustio-Martínez"
+    given-names: "Lázaro"
+    orcid: "https://orcid.org/0000-0002-0273-0520"
+  - family-names: "Herrera-Semenets"
+    given-names: "Vitali"
+    orcid: "https://orcid.org/0000-0001-7094-2835"
+  - family-names: "Moraru"
+    given-names: "Sorin-Aurel"
+    orcid: "https://orcid.org/0000-0001-9500-2604"
+preferred-citation:
+  type: article
+  title: "Interpretable Spanish Phishing Detection Using a Sparse Hybrid Representation and Direct Maximal Association Rules"
+  authors:
+    - family-names: "Cruz de la Osa"
+      given-names: "Reyder"
+    - family-names: "Hernández-León"
+      given-names: "Raudel"
+    - family-names: "Bustio-Martínez"
+      given-names: "Lázaro"
+    - family-names: "Herrera-Semenets"
+      given-names: "Vitali"
+    - family-names: "Moraru"
+      given-names: "Sorin-Aurel"

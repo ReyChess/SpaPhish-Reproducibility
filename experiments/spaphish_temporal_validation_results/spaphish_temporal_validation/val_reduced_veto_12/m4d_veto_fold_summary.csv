@@ -1,0 +1,2 @@
+run_id,fold,fold_file_size,fold_file_mtime,total,correct,accuracy,default_count,partial_used_count,partial_pos_cover_count,near_tie_count,neg_evaluated_count,neg_covered_count,neg_partial_used_count,partial_neg_cover_count
+910012,1,10295,1784020309,295,244,82.711864,0,9,104,13,13,13,0,0
