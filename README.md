@@ -16,7 +16,6 @@ Class encoding used throughout the artifacts:
 ## Repository map
 
 ```text
-article/                         LaTeX snapshot of the manuscript
 data/
   full_45_indicator/             full hybrid representation and fixed folds
   sparse_automatic/              sparse automatically selected representation
