@@ -1,0 +1,6 @@
+category,n_messages,n_raters,fleiss_kappa_binary,majority_yes,unanimous_yes,unanimous_yes_or_no,YES_equals_2_of_3_majority,STRONG_equals_3_of_3_yes
+authority,1395,3,0.3556599031771642,1283,1048,1104,True,True
+social_proof,1395,3,0.4982261640798223,142,67,1176,True,True
+liking_similarity_deception,1395,3,0.2866783778111803,1272,1041,1075,True,True
+commitment_integrity_reciprocation,1395,3,0.515904447519444,506,314,915,True,True
+distraction,1395,3,0.6553116633106896,1047,919,1127,True,True

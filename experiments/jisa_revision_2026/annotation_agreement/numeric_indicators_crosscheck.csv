@@ -1,0 +1,11 @@
+indicator,n_comparable,n_matches,mismatch_count,interpretation
+URL_COUNT_2_5,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+URL_COUNT_6_10,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+URL_COUNT_1,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+URL_COUNT_GT10,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+HOPS_4_7,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+HOPS_GT7,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+HAS_ATTACHMENT,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+ATTACH_COUNT_1,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+ATTACH_COUNT_2_5,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
+ATTACH_COUNT_GT5,1395,1395,0,empirical agreement with raw numeric field; not proof of original extraction implementation
