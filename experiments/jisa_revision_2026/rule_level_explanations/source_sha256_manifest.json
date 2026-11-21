@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "Spaphish_grouped_095.csv": "efd07e9d0c8fe06e8e5c4f433bc52c6b1797dea5c4d344e9b9aa102fa2e6a456",
+    "spaphish_binary_folds.csv": "9d6d9c0d1522940db188563058653d94d6776a5c5696da6458045d1807189896",
+    "ReglasDataset1.dat": "cc0bcef2f4f29aeaa5a41f8f1a3702bc6d4f206a221bb2bdcbe7f743d07625c9",
+    "Classes.dat": "f368147738f9ec75b8b53625a03d7d6f2647713346c2080e0812275fadc2b457",
+    "m4d_veto_instance_log.csv": "73cba2d47ef27fe756a429b8f49f42eb9253fd4b1ddb1aaff0f67feca3c9a2d9"
+  },
+  "metadata": {
+    "n_messages": 1395,
+    "dated": 1371,
+    "undated": 24,
+    "n_features": 45,
+    "automatic": 35,
+    "manual": 10
+  },
+  "rule_scoring": "Top K=12 by original rule-file ordering per class; harmonic rank weights; shrinkage beta=2 toward mu0; prior term 0.15 log(class_train_prior). Negative disabled."
+}

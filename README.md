@@ -4,6 +4,10 @@ Reproducibility artifacts for **Interpretable Spanish Phishing Detection Using a
 
 This repository packages the experimental evidence used in the SpaPhish study: discretized representations, fixed folds, cross-validation outputs, feature/scoring ablations, negative-evidence and veto sensitivity, template-grouped validation, strict temporal validation, progressive updating and rule-evolution analysis, complexity summaries, and paired statistical validation.
 
+## JISA 2026 evidence
+
+The [JISA 2026 evidence](experiments/jisa_revision_2026/README.md) documents the 35-indicator stratified, grouped and retrospective chronological evaluations, training-only priors, prior sensitivity, and rule-level explanations. The historical 45-indicator experiments remain documented below.
+
 ## Dataset
 
 The authoritative raw SpaPhish dataset is distributed through **Mendeley Data, version 5**, DOI `10.17632/hz2d6gz7pc.5`. This repository contains the derived transactional/discretized representations used by the experiments; it does not replace the raw-data distribution.

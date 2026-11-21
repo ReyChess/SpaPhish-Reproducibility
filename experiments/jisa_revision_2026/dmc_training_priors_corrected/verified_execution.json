@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "scenario": "grouped_fold_01",
+      "train_77": 597,
+      "train_78": 658,
+      "n_test": 140,
+      "correct": 129,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_02",
+      "train_77": 597,
+      "train_78": 658,
+      "n_test": 140,
+      "correct": 123,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_03",
+      "train_77": 597,
+      "train_78": 658,
+      "n_test": 140,
+      "correct": 119,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_04",
+      "train_77": 597,
+      "train_78": 658,
+      "n_test": 140,
+      "correct": 116,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_05",
+      "train_77": 598,
+      "train_78": 658,
+      "n_test": 139,
+      "correct": 113,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_06",
+      "train_77": 598,
+      "train_78": 658,
+      "n_test": 139,
+      "correct": 122,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_07",
+      "train_77": 598,
+      "train_78": 658,
+      "n_test": 139,
+      "correct": 118,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_08",
+      "train_77": 598,
+      "train_78": 657,
+      "n_test": 140,
+      "correct": 118,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_09",
+      "train_77": 598,
+      "train_78": 658,
+      "n_test": 139,
+      "correct": 114,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "grouped_fold_10",
+      "train_77": 598,
+      "train_78": 658,
+      "n_test": 139,
+      "correct": 105,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "temporal_through_2023_test_2024",
+      "train_77": 472,
+      "train_78": 93,
+      "n_test": 295,
+      "correct": 230,
+      "native_repeats_identical": true
+    },
+    {
+      "scenario": "temporal_through_2024_test_2025",
+      "train_77": 576,
+      "train_78": 284,
+      "n_test": 511,
+      "correct": 323,
+      "native_repeats_identical": true
+    }
+  ],
+  "grouped_mean_fold_accuracy": 0.8436536485097637
+}
