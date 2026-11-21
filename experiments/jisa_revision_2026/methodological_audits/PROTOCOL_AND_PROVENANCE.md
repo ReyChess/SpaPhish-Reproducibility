@@ -9,3 +9,18 @@ The chronological protocol separates model fitting from its later test messages.
 ## CMAR exclusion
 
 The manuscript audit reported identical inner macro-F1 and rule counts across requested support settings within each outer-fold and confidence combination. It counted 6,663 of 11,189 exported rules below the selected 0.04 support threshold. In the separate first-fold diagnostic, the inspected Java build reported zero effective support records during frequent-set generation and returned identical rules and predictions at four requested supports. The historical binary could not be authenticated against that diagnostic build. These reported observations concern the tested implementation and the archived exports. The JISA comparison and associated significance tests omit CMAR. The original diagnostic logs and exports were unavailable in the supplied integration evidence for independent verification.
+
+The recovered [fold 1 support analysis](cmar_reports/INFORME_CMAR.md) and
+[JAR diagnostic report](cmar_reports/CMAR_VERIFICATION_README.md) document
+the exclusion. The JAR report includes excerpts from the later diagnostic
+and the fingerprint reported for that diagnostic build. Local paths in the
+report were redacted. The original JAR, complete diagnostic logs, rule
+exports, bytecode and session files are unavailable in this archive. The
+historical JAR's identity remains unresolved.
+
+Independently enumerating the 63 nonempty subsets of the six fold-1 indicators
+that occur in at least half of the 1,254 training messages confirmed one class
+association rule at joint support 0.50. Its antecedent is `DISTRACTION_YES` and
+its consequent is class 78 (638 joint matches out of 1,254 messages). Its
+confidence is 638/941, below 0.80. This calculation checks the support argument
+with the archived data. The JAR behaviour is documented by the supplied report.

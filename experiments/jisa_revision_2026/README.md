@@ -4,12 +4,12 @@ This directory records the retrospective 35-indicator evaluation. It uses 24 tec
 
 | Protocol | n | DMC-AC-P | CBA | RF | LR | DT |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Original stratified folds | 1,395 | 85.09% | 84.37% | — | — | — |
+| Original stratified folds | 1,395 | 85.09% | 84.37% | 89.82% | 87.17% | 87.03% |
 | Template-group-disjoint CV | 1,395 | 84.37% | 84.66% | 89.82% | 87.38% | 85.38% |
 | Train through 2023, test 2024 | 295 | 77.97% | 65.76% | 69.83% | 81.36% | 71.86% |
 | Train through 2024, test 2025 | 511 | 63.21% | 71.04% | 76.91% | 79.45% | 70.65% |
 
-The original stratified 35-indicator archive supplied aligned predictions for DMC-AC-P and CBA. RF, LR and DT were described in the manuscript with different configurations from the grouped and temporal runs. Their original stratified prediction files were unavailable for this integration. The archived historical 45-indicator 10-fold result remains 88.24%. The archived historical 2025 DMC-AC-P temporal result is about 76.91%, under a different protocol.
+All five original stratified prediction sets align on instance ID, class and fold. RF, LR and DT used fixed configurations specific to this protocol, including a 300-tree RF. The archived historical 45-indicator 10-fold result remains 88.24%. The archived historical 2025 DMC-AC-P temporal result is about 76.91%, under a different protocol.
 
 For the 12 revised grouped and temporal scenarios, DMC-AC-P uses support 0.04, Kmax 12, beta 2, prior weight 0.15 and training-only class counts. Negative evidence was disabled. DMC-AC-PN is the historical optional negative-evidence extension. Its evidence is documented in the [repository README](../../README.md).
 
@@ -48,3 +48,15 @@ python experiments/jisa_revision_2026/prior_lambda_ablation/replay_ablation.py /
 ```
 
 The replay uses fixed rule bases and is retrospective. The 2025 outcomes did not select a new prior weight. At weight zero versus 0.15, accuracy is 83.66% versus 84.37% for grouped CV, 72.20% versus 77.97% in 2024, and 77.89% versus 63.21% in 2025. The 2025 replay corrects 90 predictions, introduces 15 errors and reduces phishing false negatives from 176 to 86.
+
+To reproduce the fixed-configuration stratified RF, LR and DT predictions, use
+the dependencies recorded in `automatic_35_baselines/sklearn_35_manifest.json`
+and write outputs to a scratch directory:
+
+```sh
+python experiments/jisa_revision_2026/automatic_35_baselines/run_sklearn_35_original_folds.py \
+  --input data/spaphish_binary_folds.csv --out /tmp/spaphish-stratified
+```
+
+`verify_evidence.py` also recalculates the paired exact McNemar tests and
+Holm correction for those three comparisons from the archived predictions.

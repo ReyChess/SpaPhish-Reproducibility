@@ -54,6 +54,53 @@ def protocol(scenario):
     return 'grouped_cv' if scenario.startswith('grouped') else scenario[-4:]
 
 
+def verify_stratified_sklearn(oof):
+    aligned = {r['instance_id']: r for r in oof}
+    archived = defaultdict(dict)
+    for r in rows(AUTO/'sklearn_35_oof_predictions.csv'):
+        i, model = r['instance_id'], r['model']
+        assert i not in archived[model]
+        assert (r['fold'], r['true_class']) == (aligned[i]['fold'], aligned[i]['class'])
+        archived[model][i] = r['predicted_class']
+    assert set(archived) == {'RandomForest', 'LogisticRegression', 'DecisionTree'}
+    for predictions in archived.values():
+        assert predictions.keys() == aligned.keys()
+    seen = set()
+    for r in rows(AUTO/'sklearn_35_fold_metrics.csv'):
+        model, fold = r['model'], r['fold']
+        assert (model, fold) not in seen
+        seen.add((model, fold))
+        pairs = [(a['class'], archived[model][i]) for i, a in aligned.items()
+                 if fold in ('pooled', a['fold'])]
+        result = check_metrics(pairs, r)
+        assert result['tp'] + result['tn'] == int(r['correct'])
+        if fold == 'pooled':
+            print('stratified', model, f"{result['accuracy']:.2%}")
+    assert seen == {(model, fold) for model in archived
+                    for fold in ['pooled', *map(str, range(1, 11))]}
+
+    tests = rows(AUTO/'paired_vs_dmc35.csv')
+    assert len(tests) == 3 and {r['model'] for r in tests} == set(archived)
+    p_values = []
+    for r in tests:
+        model = r['model']
+        cells = Counter((a['dmc_prediction'] == a['class'],
+                         archived[model][i] == a['class']) for i, a in aligned.items())
+        dmc_only, other_only = cells[True, False], cells[False, True]
+        for key, count in [('dmc_only', dmc_only), ('sklearn_only', other_only),
+                           ('both_correct', cells[True, True]), ('both_wrong', cells[False, False])]:
+            assert int(r[key]) == count
+        n = dmc_only + other_only
+        p = min(1, 2 * sum(math.comb(n, j) for j in range(min(dmc_only, other_only)+1)) / 2**n)
+        near(p, r['mcnemar_exact_p'])
+        near((dmc_only - other_only) / len(aligned), r['acc_diff_dmc_minus_model'])
+        p_values.append((p, float(r['holm_adjusted_p'])))
+    previous = 0
+    for i, (p, expected) in enumerate(sorted(p_values)):
+        previous = max(previous, min(1, (len(p_values)-i)*p))
+        near(previous, expected)
+
+
 def main():
     split = {r['instance_id']: r for r in rows(GROUP/'split_manifest.csv')}
     binary = {r['instance_id']: r for r in rows(REPO/'data/spaphish_binary_folds.csv')}
@@ -150,6 +197,8 @@ def main():
         result=metrics([(r['class'],r[f'{model}_prediction']) for r in oof])
         assert result['tp']+result['tn']==expected
         print('stratified',model,f"{result['accuracy']:.2%}")
+
+    verify_stratified_sklearn(oof)
 
     counterfactual = rows(ABLATION/'counterfactual_instance_predictions.csv')
     assert len(counterfactual)==len({key(r) for r in counterfactual})==2201
